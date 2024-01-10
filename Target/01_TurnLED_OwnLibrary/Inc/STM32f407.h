@@ -24,7 +24,7 @@
 // Structure RCC
 
 /* ---------------------------------- */
-/*	RCC AHB1 CLOCK ENABLE REGISTER	  */
+/*   RCC AHB1 CLOCK ENABLE REGISTER   */
 /* ---------------------------------- */
 
 typedef struct{
@@ -58,7 +58,7 @@ typedef struct{
 RCC_AHB1ENR_t RCC;
 
 /* ---------------------------------- */
-/*		  GPIO MODER REGISTER		  */
+/*         GPIO MODER REGISTER	      */
 /* ---------------------------------- */
 
 typedef struct{
@@ -83,7 +83,7 @@ typedef struct{
 GPIOx_MODER_t GPIOx_MODER;
 
 /* ---------------------------------- */
-/*		  GPIO PORT OUTPUT DATA 	  */
+/*      GPIO PORT OUTPUT DATA         */
 /* ---------------------------------- */
 
 typedef struct{
