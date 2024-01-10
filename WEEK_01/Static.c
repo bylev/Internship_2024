@@ -18,7 +18,7 @@ int main(void) {
     increment(); //increment b
     return 0;
 }
-int a = 10;
+
 void increment() {
     static int b = 3; //defining my static variable
     printf("Value of my static variable: %d \n", b); //print my actual variable
