@@ -41,8 +41,8 @@ typedef struct{
 	uint32_t	Reserved1		:3;
 	uint32_t	Reserved2		:5;
 	uint32_t	BKPSRAMEN		:1;
-	uint32_t	Res				:1;
-	uint32_t	CCMDATARAMEN	:1;
+	uint32_t	Res			:1;
+	uint32_t	CCMDATARAMEN		:1;
 	uint32_t	DMA1EN			:1;
 	uint32_t	DMA2EN			:1;
 	uint32_t	Reserved3		:2;
