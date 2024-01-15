@@ -25,14 +25,14 @@
 
 int main(void)
 {
-		RCC_AHB1ENR_t volatile *const pClockEN = (RCC_AHB1ENR_t*)RCC; // Declaring variables
-		GPIOx_MODER_t volatile *const pPortDModeReg = (GPIOx_MODER_t*)DREG; //Declaring variables
-		GPIOx_ODR_t   volatile *const pOutputD = (GPIOx_ODR_t*)OUTPUTD; //Declaring variables
+		RCC_AHB1ENR_t volatile *const pClockEN = (RCC_AHB1ENR_t*)RCC; // Base addres of the clock in the bus AHB1
+		GPIOx_MODER_t volatile *const pPortDModeReg = (GPIOx_MODER_t*)DREG; // Base addres of my port D
+		GPIOx_ODR_t   volatile *const pOutputD = (GPIOx_ODR_t*)OUTPUTD; //Base address of the mode of my port
 
-		pClockEN ->GPIODEN = 1; // Setting bit
+		pClockEN ->GPIODEN = 1; // Setting bit to use the port D
 
-		pPortDModeReg -> MODER15 = OUTPUT; // Setting bit
-		pOutputD ->pin_15 = ON; // Turning on pin 15
+		pPortDModeReg -> MODER15 = OUTPUT; // Setting bit as output mode
+		pOutputD ->pin_15 = ON; // Turning on pin 15 
     /* Loop forever */
 	for(;;);
 }
