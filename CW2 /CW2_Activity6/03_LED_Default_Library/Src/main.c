@@ -24,9 +24,9 @@
 
 int main(void)
 {
-	RCC ->AHB1ENR |= RCC_AHB1ENR_GPIODEN;
-	GPIOD ->MODER |= GPIO_MODER_MODER15_0;
-	GPIOD -> ODR |= GPIO_ODR_OD15;
+	RCC ->AHB1ENR |= RCC_AHB1ENR_GPIODEN; //Enable my RCC of my AHB1 and set the port D
+	GPIOD ->MODER |= GPIO_MODER_MODER15_0; // Enable as output my moder of pin 15
+	GPIOD -> ODR |= GPIO_ODR_OD15; // Enable the pin 15
 
     /* Loop forever */
 	for(;;);
